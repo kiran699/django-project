@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <link rel="stylesheet" href="/static/gallery.css">
+    <link rel="stylesheet" href="/static/header.css">
+    <link rel="stylesheet" href="/static/footer.css">
+    <link rel="stylesheet" href="/static/jquery-flipster-master/dist/jquery.flipster.min.css">
+
+
+    
+  <!-- bootstrap section of the page  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <!-- end of bootstrap section of the page -->
+
+  <!-- all font-icons fonts  -->
+    <!-- fonts icons -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+      
+  
+
+</head>
+<body>
+    <!-- navigation center for contact-us page -->
+    <nav>
+      <!-- hamburger -->
+      <input type="checkbox" id="nav-toggle">
+      <!-- animated hover effects  -->
+      <div class="logo">NEC<strong>Construction</strong></div>
+      <div class="links">
+          <!-- home effect -->
+          <a href="{% url 'home' %}">
+              <span class="name">Home</span>
+              <span class="label" data-label="Know more about us..">Know more about us..</span>
+          </a>
+          <a href="{% url 'services' %}">
+              <!-- services effect -->
+              <span class="name">Services</span>
+              <span class="label" data-label="Services we render...">Services we render...</span>
+          </a>
+          <!--  -->
+          <a href="{% url 'gallery' %}">
+              <!-- services effect -->
+              <span class="name">Gallery</span>
+              <span class="label" data-label="see more content...">see more content...</span>
+          </a>
+
+          <a href="{% url 'blogs' %}">
+              <!-- blogs effect -->
+              <span class="name">Blogs</span>
+              <span class="label" data-label="Read out the blogs..">Read out the blogs..</span>
+          </a>
+          <!-- contact-us effect -->
+          <a href="{% url 'contact' %}">
+              <span class="name">Contact-us</span>
+              <span class="label" data-label="Lets work together...">Lets work together...</span>
+          </a>
+
+
+
+      </div>
+      <!-- for hamburger -->
+      <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </label>
+  </nav>
+
+    <!-- naviagation end here -->
+    <h1 class="previous">OUR PREVIOUS PROJECTS</h1>
+    <div class="hero">
+        <div class="carousel">
+            <ul>
+                <li><img src="/static/weslake_images/west_image1 (1).jpg" alt=""></li>
+                <li><img src="/static/weslake_images/west_image1 (2).jpg" alt=""></li>
+                <li><img src="/static/weslake_images/west_image1 (3).jpg" alt=""></li>
+                <li><img src="/static/weslake_images/west_image1 (4).jpg" alt=""></li>
+                <li><img src="/static/weslake_images/west_image1 (5).jpg" alt=""></li>
+                <li><img src="/static/weslake_images/west_image1 (6).jpg" alt=""></li>
+                <li><img src="/static/weslake_images/west_image1 (7).jpg" alt=""></li>
+                <li><img src="/static/weslake_images/west_image1 (8).jpg" alt=""></li>
+                <li><img src="/static/weslake_images/west_image1 (9).jpg" alt=""></li>
+                <li><img src="/static/weslake_images/west_image1 (10).jpg" alt=""></li>
+            </ul>
+        </div>
+
+    </div>
+
+  <div class="reviews">
+    <p class="first_review"> “ Kiran and his team were absolutely incredible, the quality is top notch second to none. I think he has top quality contractors that are part of the team to complete every detail. We are really happy with the way it all came together.”</p>
+    <p class="second_name">– RAHUL JAYESHKAR
+      (OWNERS OF HOUSING COOPERATION, 2023 STREET OF DADAR)</p>
+  </div>
+    <!-- footer of the page -->
+    
+<!-- footer section of the page  -->
+
+<footer>
+    <div class="row">
+      <div class="col">
+        <img src="/static/images/logo.jpg" class="logo">
+        <p>As we realize that Construction is the way toward developing a building or framework. Construction is a general term meaning the art and science to form objects, systems, or organizations and comes from Latin constructionem (from com- "together" and struere "to pile up") and Old French construction. </p>
+      </div>
+      <div class="col">
+        <h3>Office <div class="underline"><span></span></div></h3>
+        <p>IIPL road</p>
+        <p>WHITELAND, GARAFIELD</p>
+        <p>MUMBAI, MAHARASHTRA, INDIA</p>
+        <P class="email-id">kiranvanapalli75@gmail.com</P>
+        <h4>+91 9769442052</h4>
+      </div>
+      <div class="col">
+        <h3>Links <div class="underline"><span></span></div></h3>
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact-us</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Newsletter <div class="underline"><span></span></div></h3>
+        <form action="#">
+          <i class="fa fa-book"></i>
+          <input type="email" name="email" id="email" placeholder="enter your email">
+          <button type="submit"></button>
+        </form>
+        <div class="social-icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-whatsapp"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">NEC CONSTRUCTION || ALL RIGHTS RESERVED  </p>
+  </footer>
+  
+  
+
+
+
+<!-- end of footer of the page  -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/static/jquery-flipster-master/dist/jquery.flipster.min.js"></script>
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing:-0.3,
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEC CONSTRUCTION</title>
+    <link rel="stylesheet" href="/static/contact.css">
+    <link rel="stylesheet" href="/static/header.css">
+
+
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body><!-- navigation center for contact-us page -->
+    <nav>
+      <!-- hamburger -->
+      <input type="checkbox" id="nav-toggle">
+      <!-- animated hover effects  -->
+      <div class="logo">NEC<strong>Construction</strong></div>
+      <div class="links">
+          <!-- home effect -->
+          <a href="{% url 'home' %}">
+              <span class="name">Home</span>
+              <span class="label" data-label="Know more about us..">Know more about us..</span>
+          </a>
+          <a href="{% url 'services' %}">
+              <!-- services effect -->
+              <span class="name">Services</span>
+              <span class="label" data-label="Services we render...">Services we render...</span>
+          </a>
+          <!--  -->
+          <a href="{% url 'gallery' %}">
+              <!-- services effect -->
+              <span class="name">Gallery</span>
+              <span class="label" data-label="see more content...">see more content...</span>
+          </a>
+
+          <a href="{% url 'blogs' %}">
+              <!-- blogs effect -->
+              <span class="name">Blogs</span>
+              <span class="label" data-label="Read out the blogs..">Read out the blogs..</span>
+          </a>
+          <!-- contact-us effect -->
+          <a href="{% url 'contact' %}">
+              <span class="name">Contact-us</span>
+              <span class="label" data-label="Lets work together...">Lets work together...</span>
+          </a>
+
+
+
+      </div>
+      <!-- for hamburger -->
+      <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </label>
+  </nav>
+
+
+
+
+    
+    <div class="container">  
+        <header>Registration Form</header>
+        <form action="{% url 'saveEnquiry' %}" class="form" method="POST">
+            {% csrf_token %}
+            <div class="input-box">
+                <label for="fullName">FullName :</label>
+                <input type="text" name="fullName" placeholder="Enter Full name" required>
+            </div>
+
+            <!--  -->
+
+            <div class="input-box">
+                <label for="fullName">Email :</label>
+                <input type="text" name="Email" placeholder="Enter your Email !" required>
+            </div>
+
+            <!--  -->
+            <div class="column">
+                <div class="input-box">
+                    <label for="fullName">Phone number:</label>
+                    <input type="number" name="number" placeholder="Enter phone number" required>
+                </div>
+
+
+                <!--  -->
+
+                <div class="input-box">
+                    <label for="fullName">Enter Birth date</label>
+                    <input type="date" name="birthDate" placeholder="Enter birth date" required>
+                </div>
+            </div>
+
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check" name="gender-male" checked />
+                        <label for="check-male">Male</label>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="gender">
+                        <input type="radio" id="check" name="gender-female" />
+                        <label for="check-female">Female</label>
+                    </div>
+                    <!--  -->
+
+                    <div class="gender">
+                        <input type="radio" id="check" name="gender-none" />
+                        <label for="check-other">Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="input-box address">
+                <label for="fullName">Address</label>
+                <input type="text" name="address1" placeholder="Enter street address" required />
+                <input type="text" name="address2" placeholder="Enter street address in line 2" />
+                <div class="column">
+                    <div class="select-box">
+                        <select name="place" id="">
+                            <option hidden>PLACE</option>
+                            <option value="0">SUB-MUMBAI</option>
+                            <option value="1">URBAN-MUMBAI</option>
+                            <option value="2">DADAR</option>
+                            <option value="3">PAREL</option>
+                            <option value="4">KANDIVALI</option>
+                            <option value="5">DAHISAR</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="column">
+
+                    <input type="text" name="city" placeholder="City" />
+                    <input type="postalnumber" name="postalcode" placeholder="Postal code" />
+                </div>
+            </div>
+
+
+            <button name="save">Submit</button>
+
+        </form>
+
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d30170.965932248495!2d72.8695596!3d19.0474305!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1681906071497!5m2!1sen!2sin" width="1475" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    {% comment %} footer {% endcomment %}
+</body>
+
+</html>

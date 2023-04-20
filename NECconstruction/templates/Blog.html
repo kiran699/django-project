@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/static/blog.css"> 
+  <link rel="stylesheet" href="/static/footer.css">
+  <!-- boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+
+
+
+  <!-- all font-icons fonts  -->
+    <!-- fonts icons -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- end of font-icons -->
+</head>
+<body><!-- navigation center for contact-us page -->
+  <nav>
+    <!-- hamburger -->
+    <input type="checkbox" id="nav-toggle">
+    <!-- animated hover effects  -->
+    <div class="logo">NEC<strong>Construction</strong></div>
+    <div class="links">
+        <!-- home effect -->
+        <a href="{% url 'home' %}">
+            <span class="name">Home</span>
+            <span class="label" data-label="Know more about us..">Know more about us..</span>
+        </a>
+        <a href="{% url 'services' %}">
+            <!-- services effect -->
+            <span class="name">Services</span>
+            <span class="label" data-label="Services we render...">Services we render...</span>
+        </a>
+        <!--  -->
+        <a href="{% url 'gallery' %}">
+            <!-- services effect -->
+            <span class="name">Gallery</span>
+            <span class="label" data-label="see more content...">see more content...</span>
+        </a>
+
+        <a href="{% url 'blogs' %}">
+            <!-- blogs effect -->
+            <span class="name">Blogs</span>
+            <span class="label" data-label="Read out the blogs..">Read out the blogs..</span>
+        </a>
+        <!-- contact-us effect -->
+        <a href="{% url 'contact' %}">
+            <span class="name">Contact-us</span>
+            <span class="label" data-label="Lets work together...">Lets work together...</span>
+        </a>
+
+
+
+    </div>
+    <!-- for hamburger -->
+    <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </label>
+</nav>
+
+
+    <!-- blog of the page start here ... -->
+      <section class="home" id="home">
+      <div class="home-text container">
+        <div class="home-title">construction blog</div>
+        <span class="home-subtitle">great construction blogs are here ...</span>
+      </div>
+    </section>
+
+    <div class="post-filter container">
+      <span class="filter-item active-filter" data-filter="all">ALL</span>
+      <span class="filter-item" data-filter="interior">INTERIOR DESIGN</span>
+      <span class="filter-item" data-filter="renovation">RENOVATION</span>
+      <span class="filter-item" data-filter="construction">CONSTRUCTION</span>
+    </div>
+
+    <section class="post container">
+      <!-- post box 1 -->
+      <div class="post-box">
+        <img src="/static/images/blog-3.jpg" alt="blog" class="post-img">
+        <h2 class="category">CONSTRUCTION</h2>
+        <a href="post-page.html" class="post-title">List of tools for construction safety
+        </a>
+        <span class="post-date">12 Feb 2023</span>
+        <p class="post-description">Ways to make your kitchen room well ordered -10 things to guide you to decide.</p>
+        <!-- profile -->
+        <img src="/static/images/househand.jpg" alt="marques-brown" class="profile-img">
+        <span class="profile-name">Home renovation</span>
+      </div>
+
+      <!-- post box2 -->
+      <div class="post-box renovation">
+        <img src="/static/weslake_images/west_image1 (1).jpg" alt="blog" class="post-img">
+        <h2 class="category">RENOVATION</h2>
+        <a href="post-page.html" class="post-title">Small Renovations</a>
+        <span class="post-date">12 Feb 2023</span>
+        <p class="post-description">List of best security systems suitable for urban living</p>
+        <!-- profile -->
+        <img src="/static/images/househand.jpg" alt="marques-brown" class="profile-img">
+        <span class="profile-name">Home renovation</span>
+      </div>
+      <!-- post box3 -->
+      <div class="post-box construction">
+        <img src="/static/images/blog-5.jpg" alt="blog" class="post-img">
+        <h2 class="category">CONSTRUCTION</h2>
+        <a href="post-page.html" class="post-title">Do Universal Design matter?</a>
+        <span class="post-date">12 Feb 2023</span>
+        <p class="post-description">The future of the INDIAN construction industry</p>
+        <!-- profile -->
+        <img src="/static/images/househand.jpg" alt="marques-brown" class="profile-img">
+        <span class="profile-name">Home renovation</span>
+      </div>
+
+      <!-- post box 4 -->
+      <div class="post-box renovation">
+        <img src="/static/weslake_images/west_image1 (10).jpg" alt="blog" class="post-img">
+        <h2 class="category">RENOVATION</h2>
+        <a href="post-page.html" class="post-title">10 ways to increase your home value</a>
+        <span class="post-date">12 Feb 2023</span>
+        <p class="post-description"> How to start a home renovation blog and Budget for a Home Renovation</p>
+        <!-- profile -->
+        <img src="/static/images/househand.jpg" alt="marques-brown" class="profile-img">
+        <span class="profile-name">Home renovation</span>
+      </div>
+
+      <!-- post box 5 -->
+      <div class="post-box construction">
+        <img src="/static/images/blog-6.jpg" alt="blog" class="post-img">
+        <h2 class="category">CONSTRUCTION</h2>
+        <a href="post-page.html" class="post-title">15 common roof support issues</a>
+        <span class="post-date">12 Feb 2023</span>
+        <p class="post-description">How to create a harmonious work environment for your construction team</p>
+        <!-- profile -->
+        <img src="/static/images/househand.jpg" alt="marques-brown" class="profile-img">
+        <span class="profile-name">Home renovation</span>
+      </div>
+      <!-- post box 6 -->
+      <div class="post-box interior">
+        <img src="/static/weslake_images/west_image1 (17).jpg" alt="blog" class="post-img">
+        <h2 class="category">INTERIOR</h2>
+        <a href="post-page.html" class="post-title">10 Kitchen remodeling ideas for small house</a>
+        <span class="post-date">12 Feb 2023</span>
+        <p class="post-description">10 eco-friendly home improvement ideas you should consider</p>
+        <!-- profile -->
+        <img src="/static/images/househand.jpg" alt="marques-brown" class="profile-img">
+        <span class="profile-name">Home renovation</span>
+      </div>
+
+      <!-- post box 7 -->
+      <div class="post-box interior">
+        <img src="/static/weslake_images/west_image1 (13).jpg" alt="blog" class="post-img">
+        <h2 class="category">INTERIOR</h2>
+        <a href="post-page.html" class="post-title">10 Kitchen cabinet types to consider</a>
+        <span class="post-date">12 Feb 2023</span>
+        <p class="post-description">DESIGN YOUR KITCHEN WITH THE EXPERTS</p>
+        <!-- profile -->
+        <img src="/static/images/househand.jpg" alt="marques-brown" class="profile-img">
+        <span class="profile-name">Home renovation</span>
+      </div>
+
+      <!-- post box 8 -->
+      <div class="post-box construction">
+        <img src="/static/images/blog-4.jpg" alt="blog" class="post-img">
+        <h2 class="category">CONSTRUCTION</h2>
+        <a href="post-page.html" class="post-title">Lighting Ideas For Your Living Room</a>
+        <span class="post-date">12 Feb 2023</span>
+        <p class="post-description">How to decorate a house with stones</p>
+        <!-- profile -->
+        <img src="/static/images/househand.jpg" alt="marques-brown" class="profile-img">
+        <span class="profile-name">Home renovation</span>
+      </div>
+      <!-- post box 9 -->
+      <div class="post-box interior">
+        <img src="/static/weslake_images/west_image1 (19).jpg" alt="blog" class="post-img">
+        <h2 class="category">INTERIOR</h2>
+        <a href="post-page.html" class="post-title">5 flooring options for your house</a>
+        <span class="post-date">12 Feb 2023</span>
+        <p class="post-description">How to build an outdoor TV cabinet</p>
+        <!-- profile -->
+        <img src="/static/images/househand.jpg" alt="marques-brown" class="profile-img">
+        <span class="profile-name">Home renovation</span>
+      </div>
+    </section>
+<!-- blog of the page end here ... -->
+
+<!-- footer of the page start here ... -->
+
+
+
+<!-- footer section of the page  -->
+
+<footer>
+  <div class="row">
+    <div class="col">
+      <img src="/static/images/logo.jpg" class="logo">
+      <p>As we realize that Construction is the way toward developing a building or framework. Construction is a general term meaning the art and science to form objects, systems, or organizations and comes from Latin constructionem (from com- "together" and struere "to pile up") and Old French construction. </p>
+    </div>
+    <div class="col">
+      <h3>Office <div class="underline"><span></span></div></h3>
+      <p>IIPL road</p>
+      <p>WHITELAND, GARAFIELD</p>
+      <p>MUMBAI, MAHARASHTRA, INDIA</p>
+      <P class="email-id">kiranvanapalli75@gmail.com</P>
+      <h4>+91 9769442052</h4>
+    </div>
+    <div class="col">
+      <h3>Links <div class="underline"><span></span></div></h3>
+      <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact-us</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Contacts</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Newsletter <div class="underline"><span></span></div></h3>
+      <form action="#">
+        <i class="fa fa-book"></i>
+        <input type="email" name="email" id="email" placeholder="enter your email">
+        <button type="submit"></button>
+      </form>
+      <div class="social-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="copyright">NEC CONSTRUCTION || ALL RIGHTS RESERVED  </p>
+</footer>
+
+<!-- end of footer section of the page  -->
+<!-- footer of the page end here ... -->
+<!-- jquery link -->
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+  <!-- script to js -->
+  <script src="/static/blog.js"></script>
+</body>
+</html>
